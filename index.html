@@ -1,46 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <link rel="stylesheet" href="styles.css">
         <title>Stafford's CSS 481 Website</title>
     </head>
     <body>
-        <h1>Hey, I'm Stafford. Welcome to my website.</h1>
-        <h2>About me</h2>
+        <header>
+            <h1>Hey, I'm Stafford. Welcome to my website.</h1>
+            <div class="h-right-container">
+                <h2 class="h-right-item"><a href="./pages/pictures.html">Pictures</a></h2>
+                <h2 class="h-right-item"><a href="./pages/projects.html">Projects</a></h2>
+            </div>
+        </header>
 
-        <p>I'm a <strong>4th year student</strong> at UW Bothell studying <em>CSSE</em>. 
-            Spring 2026 is my penultimate quarter as I'll be graduating in the Summer.
-        </p>
+        <div class="img-container">
+            <img class="img-left" src="./imgs/baldy.png" alt="mt baldy overlook" width="900">
+            <img class="img-right" src="./imgs/chunky.png" alt="my sisters dog" width="600">
+        </div>
 
-        <h3>My Hobbies</h3>
-        <ol>
-            <li>Traveling</li>
-            <li>Photography</li>
-            <li>Working out</li>
-            <li>Playing guitar</li>
-        </ol>
+        <main>
+            <div class="m-primary">
+                <div class="m-left-container">
+                    <h2>About me</h2>
 
-        <p>I look forward to having a great quarter with everyone. Thanks for checking out my website!</p>
+                    <p>I'm a <strong>4th year student</strong> at UW Bothell studying <em>CSSE</em>. 
+                        Spring 2026 is my penultimate quarter as I'll be graduating in the Summer.
+                    </p>
+                </div>
 
+                <div class="m-right-container">
+                    <h3>My Hobbies</h3>
+                    <ol>
+                        <li>Traveling</li>
+                        <li>Photography</li>
+                        <li>Working out</li>
+                        <li>Playing guitar</li>
+                    </ol>
+                </div>
+            </div>
+
+            <div class="m-secondary">
+                <p>I look forward to having a great quarter with everyone. Thanks for checking out my website!</p>
+            </div>
+        </main>
+
+        <footer>
         <h4>Links</h4>
 
-        <ul>
-            <li><a href="./pages/pictures.html">Click here to see some pictures I've taken on my adventures</a></li>
-            <li><a href="./pages/projects.html">Click here to learn more about some of the projects I've worked on</a></li>
-        </ul>
+            <ul>
+                <li><a href="./pages/pictures.html">Click here to see some pictures I've taken on my adventures</a></li>
+                <li><a href="./pages/projects.html">Click here to learn more about some of the projects I've worked on</a></li>
+            </ul>
 
-        <h5>Get in touch with me</h5>
-        <form>
-            <label for="Name">Name:</label>
-            <input type="text" id="Name" name="name"><br>
-            <label for="Email">Email:</label>
-            <input type="email" id="Email" name="email"><br>
-            <button type="submit">Submit</button>
-        </form><br>
+            <h5>Get in touch with me</h5>
+            <form>
+                <label for="Name">Name:</label>
+                <input type="text" id="Name" name="name"><br>
+                <label for="Email">Email:</label>
+                <input type="email" id="Email" name="email"><br>
+                <button type="submit">Submit</button>
+            </form><br>
 
-        <h6>Some music to chill out to</h6>
-        <audio controls>
-            <source src="/media/lofi.mp3" type ="audio/mpeg">
-            Your browser does not support the audio element.
-        </audio>
+            <div class="a-container">
+                <h6>Some music to chill out to</h6>
+                <audio controls>
+                <source src="/media/lofi.mp3" type ="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+            </div>
+        </footer>
+
     </body>
 </html>
